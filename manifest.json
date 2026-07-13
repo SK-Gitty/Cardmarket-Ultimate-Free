@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Cardmarket Ultimate",
+  "version": "1.0",
+  "description": "Expanding the functions on Cardmarket step-by-step",
+
+  "icons": {
+    "32": "icons/CMULT32.png",
+    "48": "icons/CMULT48.png",
+    "128": "icons/CMULT128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.cardmarket.com/*/*/Wants/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
